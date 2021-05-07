@@ -1,0 +1,37 @@
+//Created on: 05/05/20021
+//Hide the unnecessary input fields on invites signup page
+.invites-show .user-fields .user-field:not(.user-field-first-name, .user-field-last-name, .user-field-country, .user-field-company){
+	display: none;
+}
+.invites-show {
+    //Increased the width of dropdown to match with the text input fileds on invites signup page 
+    input, .user-field.dropdown .select-kit.single-select
+    {
+    	width: 80%;
+	max-width: 300px;
+    }
+    //Set top margin to label of the dropdown button on invites signup page
+    .user-field.dropdown .instructions{
+	margin-top: 0.5em;
+     }    	
+    //Hide full name input field on the invites signup page
+    .name-input
+    {
+    	display: none;
+    } 
+    .tip{
+	display: block; 
+    }	
+    .tip:empty{
+	display: none;
+    }	
+}
+//To hide the astric sign after email, username and password filed which was previously added by Softwareag team. 
+//As new newer release Discourse Team added astric sign in discourse source code.
+label[for="new-account-email"],
+label[for="new-account-username"],
+label[for="new-account-password"] {
+     &:after {
+         display: none !important;
+     }
+}
