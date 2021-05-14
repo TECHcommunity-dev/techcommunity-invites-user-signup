@@ -4,6 +4,10 @@
 	display: none;
 }
 .invites-show {
+    //Apply bottom margin to the invites signup form to avoid overlapping of the cookies notice on the form [Added By: Saurabh, Date: 14/05/2021]
+    form{
+	margin-bottom: 200px;
+    }	
     //Increased the width of dropdown to match with the text input fileds on invites signup page 
     input, .user-field.dropdown .select-kit.single-select
     {
